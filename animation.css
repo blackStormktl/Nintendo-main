@@ -1,0 +1,89 @@
+.card-logo .logo-left .ball{
+    animation: ball-left 2s ;
+}
+
+.card-logo .logo-right .ball{
+    animation: ball-right 2s ;
+}
+
+.display{
+    animation: display 5s;
+}
+
+section .joy-right:hover{
+    animation: up 2s;
+}
+
+
+section .joy-left:hover{
+    animation: down 2s;
+}
+
+
+@keyframes display{
+    0%{
+        width: 150px;
+    }
+}
+@keyframes ball-right{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes ball-left{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(30px);
+    }
+
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+@keyframes up {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-200px);
+    }
+
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes down {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(200px);
+    }
+
+
+    100%{
+        transform: translateY(0px);
+    }
+}
